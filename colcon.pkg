@@ -1,0 +1,10 @@
+# colcon.pkg
+# Esta “receta” garantiza que todos compilamos con los mismos
+# parámetros; si un día hay que cambiarlos, basta editar este archivo.
+
+name: navi_nav                # Nombre del workspace (lo verá CI)
+type: workspace               # Declara que este directorio es un workspace
+build-args:                   # Parámetros por defecto para `colcon build`
+  - --symlink-install         # Usa enlaces simbólicos → compila más rápido
+  - --cmake-args
+  - -DCMAKE_BUILD_TYPE=Release  # Modo Release (optimizado) para Jetson
