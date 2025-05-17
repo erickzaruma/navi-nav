@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>navi_robot_localization</name>
+  <version>0.1.0</version>
+  <description>Localización y mapeo del entorno para Navi Robot utilizando LIDAR y odometría</description>
+  <maintainer email="julyvalverde2@gmail.com">Juliana Valverde</maintainer>
+  <license>Apache License 2.0</license>
+
+  <!-- Dependencias principales de ROS 2 -->
+  <depend>rclpy</depend>
+  <depend>tf2_ros</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+
+  <!-- Dependencias de paquetes ROS específicos -->
+  <depend>rplidar_ros</depend>
+  <depend>slam_toolbox</depend>
+  <depend>navi_robot_bringup</depend>
+
+  <!-- Dependencias para ejecución -->
+  <exec_depend>rviz2</exec_depend>
+  
+  <!-- Dependencias de construcción -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <!-- Exportación para herramientas ROS -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
