@@ -1,0 +1,6 @@
+# Básico para ROS 2
+build/
+install/
+log/
+__pycache__/
+*.pyc
