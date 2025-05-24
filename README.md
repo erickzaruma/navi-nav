@@ -12,6 +12,6 @@ source install/setup.bash
 ros2 launch navi_robot_bringup sim_house.launch.py
 
 ## STM32 Folder
-Folder for STM32 workspace development in STM32CubeIDE with HAL
-File navibot_v0.zip contains all project file. To get acces unzip this file.
+Folder for STM32 Workspace Development in STM32CubeIDE (HAL)
+The file navibot_v0.zip contains all project files. To access the project, please unzip the file.
 
